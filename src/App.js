@@ -5,7 +5,7 @@ import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
 import AboutPage from "./pages/AboutPage";
 import AboutIconLink from "./components/AboutIconLink";
-import Card from "./components/shared/Card";
+// import Card from "./components/shared/Card";
 import Post from "./components/Post";
 import { FeedbackProvider } from "./components/context/FeedbackContext";
 
@@ -30,14 +30,14 @@ function App() {
                             <Route path="/about" element={<AboutPage />} />
                             <Route path="/post/*" element={<Post />} />
                         </Routes>
-                        <Card>
+                        {/* <Card>
                             <NavLink to="/" activeclassname="active">
                                 Home
                             </NavLink>
                             <NavLink to="/about" activeclassname="active">
                                 About
                             </NavLink>
-                        </Card>
+                        </Card> */}
                     </div>
             </Router>
         </FeedbackProvider>
